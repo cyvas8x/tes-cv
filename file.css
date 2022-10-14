@@ -1,0 +1,142 @@
+.container {
+    
+    height: 100%;
+}
+
+/*     .div_kiri {
+
+    border: 1px solid black;
+    background-color: #282a36;
+    color: white;
+    height: 100%;
+    width: 450px;
+    padding-right: 5px;
+} */
+
+.div_kanan {
+    padding-left: 100px;
+    border: 1px solid black;
+	transition: margin-left .5s;
+    padding: 16px;
+
+}
+
+ .tabel_kiri {
+    flex-direction: column;
+}
+
+.atas {
+    border: 1px solid black;
+}
+
+.asd {
+    display: table;
+}
+
+.tabel_nama {
+    text-align: center;
+    font-size: 50px;
+    border: 1px solid black;
+    width:2000px;
+    height: 100px;
+
+
+    background-color: yellow;
+}
+
+.ad {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.edu {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+
+}
+
+.mts {
+    background-color: #44475a;
+    list-style-type: '🏫 ';
+}
+
+.smk {
+    list-style-type: '🏫 ';
+}
+
+.nomor {
+    background-color: #44475a;
+    list-style-type: '📞 ';
+}
+
+.email {
+    list-style-type: '📧 ';
+}
+
+.rumah {
+    list-style-type: '🏠 ';
+    background-color: #44475a;
+}
+
+.logo {
+    float: right;
+}
+
+.mi {
+    list-style-type: '🏫 ';
+}
+ 
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+   .sidebar table {
+    padding: 0px 0px 8px 0px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    position: fixed;
+  }
+  
+  /*  .sidebar a:hover {
+    color: #f1f1f1;
+  }  */
+  
+   .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  } 
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar{overflow: hidden;}
+    .mi{overflow: hidden;}
+  }
