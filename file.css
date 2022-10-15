@@ -1,5 +1,5 @@
 .container {
-    
+
     height: 100%;
 }
 
@@ -9,49 +9,45 @@
     background-color: #282a36;
     color: white;
     height: 100%;
-    width: 450px;
+    width: 0;
     padding-right: 5px;
+    float: left;
 } */
 
 .div_kanan {
     padding-left: 100px;
     border: 1px solid black;
-	transition: margin-left .5s;
+    transition: margin-left .5s;
     padding: 16px;
 
-}
 
- .tabel_kiri {
-    flex-direction: column;
-}
-
-.atas {
-    border: 1px solid black;
-}
-
-.asd {
-    display: table;
 }
 
 .tabel_nama {
     text-align: center;
     font-size: 50px;
     border: 1px solid black;
-    width:2000px;
-    height: 100px;
-
-
+    width: 100%;
+    height: 70px;
     background-color: yellow;
+    color: black
 }
 
-.ad {
-    text-decoration: underline;
-    text-decoration-color: yellow;
+.tabel_kiri{
+    text-size-adjust: 3px;
+}
+
+.kontak {
+    text-align: center;
+    padding-right: 50px;
+    border-bottom: 2px solid yellow;
+    margin-top: -10px;
+
 }
 
 .edu {
-    text-decoration: underline;
-    text-decoration-color: yellow;
+    text-align: center;
+    border-bottom: 2px solid yellow;
 
 }
 
@@ -85,7 +81,7 @@
 .mi {
     list-style-type: '🏫 ';
 }
- 
+
 
 
 .sidebar {
@@ -97,46 +93,143 @@
     left: 0;
     background-color: #111;
     transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-   .sidebar table {
+    padding-top: 0px;
+    overflow: hidden;
+}
+
+.sidebar table {
     padding: 0px 0px 8px 0px;
     text-decoration: none;
     font-size: 10px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
-    position: fixed;
-  }
-  
-  /*  .sidebar a:hover {
-    color: #f1f1f1;
-  }  */
-  
-   .closebtn {
+}
+
+.sidebar a:hover {
+    color: red;
+}
+
+.closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  } 
-  
-  .openbtn {
+    right: 10px;
+    font-size: 15px;
+    margin-left: 0px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.closebtn:hover {
+    color: red;
+}
+
+.openbtn {
     font-size: 20px;
     cursor: pointer;
     background-color: #111;
     color: white;
-    padding: 10px 15px;
     border: none;
-  }
-  
-  .openbtn:hover {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.openbtn:hover {
     background-color: #444;
+}
+.gambar{
+    height: 100px;
+    width: 100px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (min-width: 761px) {
+    .sidebar {
+        overflow-x: visible;
+        width: 210px;
+    }
+
+    .div_kanan {
+        margin-left: 230px;
+    }
+
+    .openbtn {
+        display: none;
+    }
+
+    .closebtn {
+        display: none;
+    }
+    .gambar{
+        display: block;
+        height: 200px;
+        width: 200px;
+        
+    }
+    .edu{
+        padding-left: 30px;
+    }
+    .kontak{
+        margin-top: 0;
+        padding-right: 0;
+        padding-left: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+body.dark {
+    background-color: #292c35;
+    color: white;
   }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidebar{overflow: hidden;}
-    .mi{overflow: hidden;}
-  }
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color:#111;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
+}
+/* .dark {
+    background-color: black;
+    color: white;
+  } */
