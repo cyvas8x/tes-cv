@@ -8,12 +8,12 @@ function openNav() {
     document.getElementById("geser").style.marginLeft= "0";
   }
 
-  const checkbox = document.getElementById('checkbox');
-
-checkbox.addEventListener('change', ()=>{
-  document.body.classList.toggle('dark');
-})
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark");
+  function darkmode() {
+    if (document.getElementById('darkmode-toggle').checked) {
+      var element = document.body;
+      element.classList.toggle("dark");   
+    } else {
+        var element = document.body;
+        element.classList.toggle("normal")
+    }
 }
