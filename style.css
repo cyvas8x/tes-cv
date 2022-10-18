@@ -112,7 +112,7 @@
 
 
 /* CSS untuk pengguna HP */
-@media screen and (max-width: 1368px) {
+@media screen and (min-width: 761px) {
     .sidebar {
         overflow-x: visible;
         width: 210px;
