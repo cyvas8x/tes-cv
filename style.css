@@ -61,7 +61,6 @@
     transition: 0.5s;
     padding-top: 0px;
     overflow: hidden;
-    border-right: 2px solid yellow;
 }
 
 .sidebar table {
@@ -106,16 +105,17 @@
     background-color: #444;
 }
 .gambar{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 }
 
 
-/* CSS untuk pengguna HP */
+/* CSS untuk pengguna pc */
 @media screen and (min-width: 761px) {
     .sidebar {
         overflow-x: visible;
         width: 210px;
+        border-right: 2px solid yellow;
     }
 
     .div_kanan {
@@ -154,7 +154,7 @@ body{
 }
 
 #toggle{
-    
+    bottom: auto;
     margin-top: 80px;
     display: block;
     width: 195px;
@@ -200,3 +200,7 @@ body.active{
 body.active .div_kanan{
     border: 2px solid yellow;
 }
+
+/* body.active .sidebar{
+    border-right: 2px solid yellow;
+} */
