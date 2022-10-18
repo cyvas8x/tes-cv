@@ -4,12 +4,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CV Nasrul Aziz</title>
-	<link rel="stylesheet" type="text/css" href="file.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<script src="file.js"></script>
 </head>
 
-<body>
+<body id="body">
 	<div class="container">
 
 		<div class="div_kiri">
@@ -26,7 +26,8 @@
 						<th>
 							<h2 class="edu">Riwayat Pendidikan</h2>
 							<ul>
-								<li style="list-style-type: '🏫 '">
+								<li style="list-style-type: '🏫 ';
+								background-color: #44475a;">
 									<p>
 										MI Darussalam <i><small>(2012-2015)</small></i>
 									</p>
@@ -36,7 +37,8 @@
 										Mi Roudlotun Nasyi'in <i><small>(2015-2018)</small></i>
 									</p>
 								</li>
-								<li style="list-style-type: '🏫 '">
+								<li style="list-style-type: '🏫 ';
+								background-color: #44475a;">
 									<p>
 										MTS Annahdiyah <i><small>(2018-2020)</small></i>
 									</p>
@@ -53,17 +55,19 @@
 						<th>
 							<h2 class="kontak">Kontak Saya</h2>
 							<ul>
-								<li class="nomor">
+								<li style="list-style-type: '📞 ';
+								background-color: #44475a;">
 									<p>
 										081237152571
 									</p>
 								</li>
-								<li class="email">
+								<li style="list-style-type: '📧 ';">
 									<p>
 										aziznasrul85@gmail.com
 									</p>
 								</li>
-								<li class="rumah">
+								<li style="list-style-type: '🏠 ';
+								background-color: #44475a;">
 									<p>
 										Kepuharjo, Karangploso, Malang
 									</p>
@@ -72,11 +76,21 @@
 						</th>
 					</tr>
 				</table>
-				<input type="checkbox" id="darkmode-toggle" onclick="darkmode()"/>
-				<label for="darkmode-toggle">
+				<div id="toggle">
+					<i class="indicator">
+						
+					</i>
+				</div>
 			</div>
 		</div>
-
+		<script>
+			const body = document.getElementById('body');
+const toggle = document.getElementById('toggle');
+toggle.onclick = function(){
+  toggle.classList.toggle('active');
+  body.classList.toggle('active');
+}
+		</script>
 		<div id="geser" class="div_kanan">
 			<button class="openbtn" onclick="openNav()">☰ Buka Bilah Samping</button>
 			<div class="tabel_nama">🐒NASRUL AZIZ😺</div>

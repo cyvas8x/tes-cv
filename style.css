@@ -16,9 +16,10 @@
 
 .div_kanan {
     padding-left: 100px;
-    border: 1px solid black;
+    border: 2px solid black;
     transition: margin-left .5s;
     padding: 16px;
+
 }
 
 .tabel_nama {
@@ -49,39 +50,6 @@
 
 }
 
-.mts {
-    background-color: #44475a;
-    list-style-type: '🏫 ';
-}
-
-.smk {
-    list-style-type: '🏫 ';
-}
-
-.nomor {
-    background-color: #44475a;
-    list-style-type: '📞 ';
-}
-
-.email {
-    list-style-type: '📧 ';
-}
-
-.rumah {
-    list-style-type: '🏠 ';
-    background-color: #44475a;
-}
-
-.logo {
-    float: right;
-}
-
-.mi {
-    list-style-type: '🏫 ';
-}
-
-
-
 .sidebar {
     height: 100%;
     width: 0;
@@ -93,6 +61,7 @@
     transition: 0.5s;
     padding-top: 0px;
     overflow: hidden;
+    border-right: 2px solid yellow;
 }
 
 .sidebar table {
@@ -102,6 +71,7 @@
     color: white;
     display: block;
     transition: 0.3s;
+    
 }
 
 .sidebar a:hover {
@@ -112,7 +82,7 @@
     position: absolute;
     top: 0;
     right: 10px;
-    font-size: 15px;
+    font-size: 25px;
     margin-left: 0px;
     text-decoration: none;
     color: aliceblue;
@@ -141,7 +111,7 @@
 }
 
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* CSS untuk pengguna HP */
 @media screen and (min-width: 761px) {
     .sidebar {
         overflow-x: visible;
@@ -176,66 +146,57 @@
 
 }
 
-/* TOMBOL DARK MODE */
+/* DARK MODE */
 
-label {
-    width:205px;
-    height:60px;
-    position: relative;
-    display: block;
-    background: #ebebeb;
-    border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
-    cursor: pointer;
-  }
-  label:after {
-    content: "";
-    width:50px;
-    height: 50px;
-    position: absolute;
-    top:5px;
-    left:5px;
-    background: linear-gradient(180deg,#ffcc89,#d8860b);
-    border-radius: 150px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-  }
-  input {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-  }
-  input:checked + label {
-    background: #242424;
-  }
-  input:checked + label:after {
-    left:200px;
-    transform: translateX(-100%);
-    background: linear-gradient(180deg,#777,#3a3a3a);
-  }
-  label, label:after {
-    transition: 0.3s
-  }
-  label:active:after{ 
-    width: 260px; 
-/*   }
-  .background{
+body{
     background: white;
-  }
-  input:checked + label + .background {
-    background:#242424;
-  }
- */
-  }
- 
-  .dark {
-    background-color: #44475a;
-    color: white;  
-  }
-  .div_kanan{
-    border: 2px solid yellow;
-  }
+    transition: 0.5s;
+}
 
-  .normal{
-    background-color: white;
-    color: black;
-  }
+#toggle{
+    
+    margin-top: 80px;
+    display: block;
+    width: 195px;
+    height: 65px;
+    border-radius: 160px;
+    background: white;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 5px inset yellow
+
+}
+
+#toggle.active{
+    background: black;
+}
+
+#toggle .indicator{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 0px 0px 0px 4px;
+    transform: scale(0.9);
+    padding-top: 5px;
+}
+
+#toggle.active .indicator{
+    left: 120px;
+    background-color:red;
+    position:absolute;
+    background-color:transparent;
+    border-radius:50%;
+    box-shadow:15px 5px 0 1px #FEFCD7;
+    padding-top: 0;
+}
+
+body.active{
+    background: #44475a;
+    color: white;
+}
+
+body.active .div_kanan{
+    border: 2px solid yellow;
+}
