@@ -1,6 +1,6 @@
 /* SIDEBAR */
 function openNav() {
-  document.getElementById("mySidebar").style.width = "160px";
+  document.getElementById("mySidebar").style.width = "210px";
   document.getElementById("geser").style.marginLeft = "0px";
 }
 
