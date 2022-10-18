@@ -38,10 +38,7 @@
 
 .kontak {
     text-align: center;
-    padding-right: 50px;
     border-bottom: 2px solid yellow;
-    margin-top: -10px;
-
 }
 
 .edu {
@@ -134,14 +131,6 @@
         height: 200px;
         width: 200px;
         
-    }
-    .edu{
-        padding-left: 30px;
-    }
-    .kontak{
-        margin-top: 0;
-        padding-right: 0;
-        padding-left: 30px;
     }
 
 }
