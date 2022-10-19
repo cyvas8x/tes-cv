@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CV Nasrul Aziz</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>TES0123</title>
+	<link rel="stylesheet" type="text/css" href="file.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<script src="file.js"></script>
-</head>
+	<script>
+		/* SIDEBAR */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "210px";
+  document.getElementById("mySidebar").style.borderRight = "2px solid yellow"
+  document.getElementById("geser").style.marginLeft = "0px";
+}
 
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("mySidebar").style.borderRight = "0"
+  document.getElementById("geser").style.marginLeft= "0";
+}
+	</script>
+</head>
 <body id="body">
 	<div class="container">
 
@@ -78,42 +88,47 @@
 				</table>
 				<div id="toggle">
 					<i class="indicator">
-
+						<script>
+							const body = document.getElementById('body');
+							const toggle = document.getElementById('toggle');
+							toggle.onclick = function () {
+								toggle.classList.toggle('active');
+								body.classList.toggle('active');
+							}
+						</script>
 					</i>
 				</div>
 			</div>
 		</div>
-		<script>
-			const body = document.getElementById('body');
-			const toggle = document.getElementById('toggle');
-			toggle.onclick = function () {
-				toggle.classList.toggle('active');
-				body.classList.toggle('active');
-			}
-		</script>
-		<div id="geser" class="div_kanan">
+
+	<div id="geser" class="div_kanan">
 			<button class="openbtn" onclick="openNav()">☰ Buka Bilah Samping</button>
-			<div class="tabel_nama">🐒NASRUL AZIZ😺</div>
+<table>
+			<tr>
+				<th class="tabel_nama">🐒NASRUL AZIZ😺 </th>
+			</tr>
+		</table>
+		<p>
 
+		<h1>Tentang Saya</h1>
+		<hr style="margin:auto;width:100%;border: 2px solid yellow;"><br>
 
-			<p>
-				<h1>Tentang Saya</h1>
-				<hr style="margin:auto;width:100%;border: 2px solid yellow;"><br>
-
-				Ngetes.
-			</p>
-			<p>
-				<h1> Skill Pemrograman</h1>
-				<hr style="margin:auto;width:100%;border: 2px solid yellow;">
-				<span>
-					<ul>
-						<li>
-							HTML
-
-				</span>
-			</p>
-			<div class="background" style="height: 100px;">asdsd</div>
-
+		Nama Saya Nasrul Aziz, Lahir pada 13 Februari tahun 2006 dan umur saya saat ini berumur 16. saya sekarang belajar di SMKN 2 Singosari, Kelas 11. Saya Masuk di jurusan RPL, dan alasan saya masuk jurusan itu karena saya sangat suka sekali ngoding.<br>
+		saya mulai belajar pemrograman mulai dari kelas 7 pada tahun 2018 dan bahasa pemrograman pertama yang saya pelajari adalah python, dilanjut dengan bahasa pemrograman yang lain.</p>
+		<table class="tabel">
+			<h1>Skill Keahlian</h1>
+			<hr style="margin:auto;width:100%;border: 2px solid yellow;"><br><br>
+		<tr style="text-align: center;">
+			<td class="cpp"><img src="gambar/cpp.png" height="100px" width="100px">C++</td>
+			<td class="css"><img src="gambar/css.png" height="100px" width="100px">CSS</td>
+			<td class="html"><img src="gambar/html.png" height="100px" width="100px">HTML</td>
+			<td class="java"><img src="gambar/java.png" height="100px" width="100px">Java</td>
+			<td class="js"><img src="gambar/javascript.png" height="100px" width="100px">JavaScript</td>
+			<td class="python"><img src="gambar/python.png" height="100px" width="100px">Python</td>
+			<td class="shell"><img src="gambar/shell.png" height="100px" width="100px">Shell</td>
+			<td class="sql"><img src="gambar/sql.png" height="100px" width="100px">SQL</td>
+		</tr>
+	</table>
 		</div>
 	</div>
 </body>
