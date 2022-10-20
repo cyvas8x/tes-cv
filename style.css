@@ -15,6 +15,8 @@
 } */
 
 .div_kanan {
+
+	height: 100%;
     padding-left: 100px;
     border: 2px solid black;
     transition: margin-left .5s;
@@ -32,10 +34,6 @@
     color: black
 }
 
-.tabel_kiri{
-    text-size-adjust: 3px;
-}
-
 .kontak {
     text-align: center;
     border-bottom: 2px solid yellow;
@@ -47,6 +45,7 @@
 
 }
 
+/* CSS sidebar */
 .sidebar {
     height: 100%;
     width: 0;
@@ -102,10 +101,13 @@
     background-color: #444;
 }
 .gambar{
+	border-radius: 50%;
     height: 150px;
     width: 150px;
 }
-
+.kebalik{
+    transform: scale(-1, 1);
+}
 
 /* CSS untuk pengguna pc */
 @media screen and (min-width: 761px) {
@@ -129,10 +131,8 @@
     .gambar{
         display: block;
         height: 200px;
-        width: 200px;
-        
+        width: 200px;   
     }
-
 }
 
 /* DARK MODE */
@@ -144,7 +144,7 @@ body{
 
 #toggle{
     bottom: auto;
-    margin-top: 80px;
+    margin-top: 30%;
     display: block;
     width: 195px;
     height: 65px;
@@ -152,7 +152,7 @@ body{
     background: white;
     transition: 0.5s;
     cursor: pointer;
-    border: 5px inset yellow
+    border: 5px outset yellow
 
 }
 
@@ -168,6 +168,7 @@ body{
     border-radius: 50%;
     margin: 0px 0px 0px 4px;
     transform: scale(0.9);
+    transition: 0.5s ease-in;
     padding-top: 5px;
 }
 
